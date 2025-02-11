@@ -7,7 +7,7 @@ let counter = 1000;
 let countdownStarted = false; 
 
 
-counterText.innerText = "Будешь моей валентинкой?";
+counterText.innerText = "Даша ты будешь моей валентинкой?";
 
 leftButton.addEventListener("click", function() {
     leftButton.classList.add("enlarged");
