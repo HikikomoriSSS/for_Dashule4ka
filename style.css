@@ -1,0 +1,77 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 20px; 
+    padding: 10px;
+}
+
+/* Кнопки */
+#rightButton {
+    background-color: black;
+    color: white;
+}
+
+#leftButton {
+    background-color: hotpink;
+}
+
+#leftButton, #rightButton {
+    padding: 15px;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px 0px;
+    width: 80%; 
+    max-width: 300px; 
+    height: auto;
+}
+
+#leftButton.enlarged {
+    transform: scale(1.5);
+}
+
+
+#imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    margin-top: 20px;
+}
+
+#imageContainer img {
+    max-width: 100%; 
+    height: auto;
+    display: none;
+}
+
+
+.us {
+    position: relative; 
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    max-width: 100%; 
+}
+
+.us img {
+    width: 300px; 
+    max-width: 100%;
+}
+
+
+@media (max-width: 600px) {
+    #leftButton, #rightButton {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .us img {
+        width: px; 
+    }
+}
